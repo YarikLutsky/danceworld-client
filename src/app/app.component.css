@@ -1,0 +1,22 @@
+.navbar {
+  background: #222;
+  position: fixed;
+  width: 100%;
+}
+
+.side-navbar {
+  background: #555;
+  padding-top: 60px;
+}
+
+.main {
+  background: #ccc;
+}
+
+.subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,0 +1,28 @@
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  align-items: center;
+}
+.nav-item {
+}
+
+.nav-item > a {
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item > a:hover {
+  background-color: #aaa;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.profile-item {
+  margin-left: auto;
+}
