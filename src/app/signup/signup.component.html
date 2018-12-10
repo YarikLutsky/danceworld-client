@@ -1,0 +1,80 @@
+<div id="signup-form">
+  <h4>Sign Up</h4>
+  <form #f="ngForm" (ngSubmit)="submit(f.value)">
+    <div>
+      <label for="firstname">
+        <span class="required">First Name: *</span>
+        <input ngModel
+               #firstName="ngModel"
+               type="text"
+               id="firstname"
+               name="firstname"
+               value=""
+               placeholder="Your First Name"
+               required="required"
+               tabindex="1"
+               autofocus="autofocus" />
+      </label>
+    </div>
+    <div>
+      <label for="lastname">
+        <span class="required">Last Name: *</span>
+        <input type="text"
+               ngModel
+               #lastName="ngModel"
+               id="lastname"
+               name="lastname"
+               value=""
+               placeholder="Your Last Name"
+               required="required"
+               tabindex="1"
+               autofocus="autofocus" />
+      </label>
+    </div>
+    <div>
+      <label for="email">
+        <span class="required">Email: *</span>
+        <input type="email"
+               ngModel
+               #email="ngModel"
+               id="email"
+               name="email"
+               value=""
+               placeholder="Your Email"
+               tabindex="2"
+               required="required" />
+      </label>
+    </div>
+    <div>
+      <label for="password">
+        <span class="required">Password: *</span>
+        <input type="password"
+               ngModel
+               #password="ngModel"
+               id="password"
+               name="password"
+               value=""
+               placeholder="Enter Password"
+               tabindex="2"
+               required="required" />
+      </label>
+    </div>
+    <div>
+      <label for="password_">
+        <span class="required">Confirm Password: *</span>
+        <input type="password"
+               ngModel
+               #password_="ngModel"
+               id="password_"
+               name="password_"
+               value=""
+               placeholder="Confirm"
+               tabindex="2"
+               required="required" />
+      </label>
+    </div>
+    <div>
+      <button name="submit" type="submit" id="submit" >Sign Up</button>
+    </div>
+  </form>
+</div>
